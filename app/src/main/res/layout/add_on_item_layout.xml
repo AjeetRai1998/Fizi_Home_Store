@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add On Item"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/pure_black"
+        />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Name"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/outline_bg"
+        >
+        <Spinner
+            android:id="@+id/productType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:entries="@array/typeOfAddOn"
+            />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add "
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/close_button"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

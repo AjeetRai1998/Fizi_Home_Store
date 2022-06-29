@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/match"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/toolbarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Transfer History"
+                    android:textColor="@color/pure_black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+           <LinearLayout
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:text="Enter Amount of money"
+                   android:textColor="@color/color_black"
+                   android:textStyle="bold" />
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/vemail"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:gravity="center"
+                   app:hintEnabled="false"
+                   app:startIconDrawable="@drawable/money"
+                   app:startIconTint="@color/oragne">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/color_white"
+                       android:inputType="textEmailAddress"
+                       android:id="@+id/withdrawalMoney"
+                       android:paddingTop="10dp" />
+               </com.google.android.material.textfield.TextInputLayout>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:visibility="gone"
+                   android:text="Choose payment method"
+                   android:textColor="@color/color_black"
+                   android:textStyle="bold" />
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/paymentMethodOption"
+                   android:visibility="gone"
+                   android:layout_margin="5dp" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:id="@+id/detailsForm"
+                   android:visibility="gone"
+                   android:padding="5dp"
+                   android:layout_margin="10dp"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter Details"
+                       android:layout_marginLeft="5dp"
+                       android:textColor="@color/pure_black"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       />
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:hint="Enter Upi/Number"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           />
+
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Request Withdrawal"
+                       android:layout_marginTop="10dp"
+                       android:padding="15dp"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:id="@+id/bankDetails"
+                   android:padding="5dp"
+                   android:visibility="gone"
+                   android:layout_margin="10dp"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter Bank Details"
+                       android:layout_marginLeft="5dp"
+                       android:textColor="@color/pure_black"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       />
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:hint="Bank Account number"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           />
+
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:hint="Bank Name"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           />
+
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:hint="Account Holder Name"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           />
+
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:hint="IFSC Code"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           />
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Request Withdrawal"
+                       android:layout_marginTop="10dp"
+                       android:padding="15dp"
+                       />
+               </LinearLayout>
+
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/btnWithdraw"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Request Withdrawal"
+                   app:backgroundTint="@color/color_green"
+                   android:layout_margin="20dp"
+                   android:padding="15dp"
+                   />
+           </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prooflist"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

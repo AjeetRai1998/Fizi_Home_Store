@@ -1,0 +1,105 @@
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            app:tint="@color/oragne"
+            android:src="@drawable/my_wallet"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:id="@+id/amt"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_black"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="end"
+                    android:text="Rs.00"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:textColor="@color/color_black"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Type"/>
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:textColor="@color/oragne"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Shopping"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:id="@+id/date"
+                android:textColor="@color/gray3"
+                android:fontFamily="@font/roboto"
+                android:layout_marginLeft="10dp"
+                android:text="dd mm yyyy hh: mm"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemsList"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

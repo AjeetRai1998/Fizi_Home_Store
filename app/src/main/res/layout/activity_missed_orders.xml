@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".activity.MissedOrders">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/match"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/toolbarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Missed Orders"
+                    android:textColor="@color/pure_black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/missedOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match" />
+    <TextView
+        android:id="@+id/noTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No item Found.."
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

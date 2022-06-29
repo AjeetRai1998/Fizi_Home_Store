@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking id:  1234"
+                android:textColor="@color/pure_black"
+                android:layout_weight="1"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05-12-2020"
+                android:textColor="@color/color_black"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Event"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Birthday"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Of Tables :"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="23"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timings:"
+                android:textStyle="bold"
+                android:textColor="@color/color_black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00 Am- 2:00 Pm"
+                android:layout_weight="1"
+
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/acceptOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:layout_weight="1"
+                app:backgroundTint="@color/color_green"
+                android:layout_margin="5dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rejectOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

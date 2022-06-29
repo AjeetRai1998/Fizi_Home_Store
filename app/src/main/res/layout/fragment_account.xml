@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:background="#ff7f00"
+                    android:gravity="center_vertical|center_horizontal">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <ImageView
+                         android:id="@+id/bannerImage"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/restaurant"/>
+                     <ImageView
+                         android:id="@+id/editBanner"
+                         android:layout_width="30dp"
+                         android:layout_alignParentRight="true"
+                         android:layout_height="30dp"
+                         android:layout_margin="10dp"
+                         android:src="@drawable/ic_baseline_camera_alt_24"
+                         android:padding="5dp"
+                         android:background="@drawable/rect_bg_outline"
+                         android:backgroundTint="@color/pure_black"
+                         android:tint="@color/color_white"/>
+                 </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_below="@+id/tv_user_name"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="view Account"
+                        android:textSize="14dp"
+                        android:visibility="gone"
+                        android:textColor="@color/oragne"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray1"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewProfile"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/iv_profile"
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:scaleType="fitStart"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:src="@drawable/ic_user" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_profile"
+                                android:layout_toEndOf="@+id/iv_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/view_account"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/check_your_profile"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/gray1"/>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewDocument"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/iv_history"
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:scaleType="fitStart"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:src="@drawable/ic_history_black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_history"
+                                android:layout_toEndOf="@+id/iv_history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Documents"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KYC Documents"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/manageProduct"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/payment" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_payment"
+                                android:layout_toEndOf="@+id/iv_payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manage Product"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add,edit And delete product here"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/manageCoupon"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/coupon" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_payment"
+                                android:layout_toEndOf="@+id/iv_payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manage Coupon"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add,edit And delete coupon here"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/uploadMenu"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:scaleType="fitStart"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:src="@drawable/restaurant_menu" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_profile"
+                                android:layout_toEndOf="@+id/iv_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Upload Menu"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Upload menus here"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurantReview"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:scaleType="fitStart"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:src="@drawable/review" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_profile"
+                                android:layout_toEndOf="@+id/iv_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Customer Reviews"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="see reviews"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/orderHistory"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/payment" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_payment"
+                                android:layout_toEndOf="@+id/iv_payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Order History"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View order history "
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/menuItem"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/restaurant_menu" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_payment"
+                                android:layout_toEndOf="@+id/iv_payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Your Menu"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View Your Menu "
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/managePayment"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/iv_payment"
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/payment" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/iv_payment"
+                                android:layout_toRightOf="@+id/iv_payment"
+                                android:text="Manage Payments"
+                                android:textColor="@color/contentTextColor"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/check_your_payment"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/terms"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/iv_terms"
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/payment"
+                             />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_terms"
+                                android:layout_toEndOf="@+id/iv_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/terms_and_condations"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/check_our_terms_conditions"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/gray1"/>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/policy"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/iv_privacy"
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/privacy" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginStart="40dp">
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_privacy"
+                                android:layout_toEndOf="@+id/iv_privacy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/privacy_policy"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/check_our_privacy_policy"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rlt_setting"
+                        android:visibility="gone"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/iv_setting"
+                            android:layout_width="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="25dp"
+                            android:scaleType="fitStart"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:src="@drawable/ic_settings" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="40dp">
+
+                            <TextView
+                                android:layout_toRightOf="@+id/iv_setting"
+                                android:layout_toEndOf="@+id/iv_setting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting"
+                                android:layout_centerVertical="true"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/contentTextColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/change_your_setting"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/about"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/account_id"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:backgroundTint="@color/contentTextColor"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/about_us_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_toRightOf="@+id/account_id"
+                            android:layout_toEndOf="@+id/account_id">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="About "
+                                android:textColor="@color/contentTextColor"
+                                android:id="@+id/aboutcook"
+                                android:textStyle="bold"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Check About us"
+                                android:textColor="@color/gray3"
+                                android:textSize="12sp"
+                                android:layout_marginTop="3dp" />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:tint="@color/color_blue"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray1"/>
+
+                    <LinearLayout
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:clickable="true"
+                        android:background="@color/colorPrimaryDark"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOGOUT"
+                            android:layout_weight="1"
+                            android:textColor="@color/pure_black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logout"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="App version 1.0.0 (1)"
+                        android:textColor="@color/gray3"
+                        android:textSize="13dp"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="30dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

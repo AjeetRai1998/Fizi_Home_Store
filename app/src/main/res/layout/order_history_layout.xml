@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orderid : 1234"
+                android:textColor="@color/pure_black"
+                android:layout_weight="1"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05-12-2020"
+                android:textColor="@color/color_black"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Type:"
+                android:textColor="@color/color_black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/paymentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   UPI"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount:  "
+                android:textColor="@color/color_black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$3234"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemsList"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products:   "
+                android:textColor="@color/color_black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milk Bottle 1X, Dahi 1Pc, Aaloo Paratha 2Pc."
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/viewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="view order"
+                android:layout_weight="1"
+                app:backgroundTint="@color/color_blue"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,46 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#dcdcdc"
+       android:layout_marginBottom="7dp"
+       android:orientation="horizontal"
+       android:gravity="center_vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="10dp"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/menu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Menu Name"
+              android:textColor="@color/pure_black"
+              android:textSize="15dp"/>
+          <TextView
+              android:id="@+id/desc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Mark all "
+              android:textColor="@color/red"
+              android:textSize="10dp"/>
+      </LinearLayout>
+       <com.suke.widget.SwitchButton
+           android:layout_marginRight="10dp"
+           android:id="@+id/switchButton"
+           android:layout_width="60dp"
+           app:sb_checked_color="@color/red"
+           android:layout_height="30dp"/>
+
+   </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"/>
+</LinearLayout>

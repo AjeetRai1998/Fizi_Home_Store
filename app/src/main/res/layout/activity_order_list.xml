@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/match"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/toolbarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order History"
+                    android:textColor="@color/pure_black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_below="@id/match"
+       android:id="@+id/mainLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="none">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/orderHistoryList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <ImageView
+               android:id="@+id/loading"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:layout_gravity="center_horizontal"
+               android:src="@drawable/logo"/>
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/noTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No item Found.."
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/match"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Manage Product "
+                    android:textColor="@color/pure_black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sortMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sort Menu"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@color/color_blue"
+                    android:drawableLeft="@drawable/ic_arrow_down"
+                    android:drawableTint="@color/color_white"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:hint="Search to mark instock/out of stock"
+                android:singleLine="true"
+                android:textColor="@color/pure_black"
+                android:imeOptions="actionSearch"
+                android:backgroundTint="@color/color_white"
+                />
+        </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/card_search"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_list"
+        />
+        <TextView
+            android:id="@+id/noTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Product Found"
+            android:layout_centerInParent="true"
+            android:textSize="19sp"
+            android:visibility="gone"
+            android:textColor="@color/color_blue"
+            />
+
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/color_blue"
+        android:textColor="@color/color_white"
+        app:iconTint="@color/color_white"
+        android:layout_gravity="bottom|right"
+        android:text="Add product"
+        app:icon="@drawable/add"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

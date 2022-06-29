@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <androidx.cardview.widget.CardView android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        app:contentPadding="10dp"
+        app:cardBackgroundColor="#feac52"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/refresh"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Required!"
+                android:layout_marginTop="0dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/pure_black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="The installed version of Capsico is no longer supported. Please update your app."
+                android:textColor="@color/pure_black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star"
+                    android:tint="@color/pure_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bugs Fixed"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#848282"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star"
+                    android:tint="@color/pure_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enhanced Interface"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#848282"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star"
+                    android:tint="@color/pure_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Features Added"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#848282"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE NOW"
+                android:layout_margin="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:background="@color/pure_black"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/color_white"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/notNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next time"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/pure_black"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give reject reason"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <Spinner
+            android:id="@+id/resonSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/outline_bg"/>
+        <EditText
+            android:id="@+id/reason"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/outline_bg"
+            android:hint="Write reason here....."
+            />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit reason"
+                app:cornerRadius="10dp"
+                android:padding="15dp"
+                android:layout_margin="20dp"
+                />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/close_button" />
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadProgress"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Amount of money "
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/money"
+            app:startIconTint="@color/oragne"
+            android:hint="Amount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Money"
+            android:background="@color/color_blue"
+            android:textColor="@color/color_white"
+            android:textSize="15dp"
+            app:cornerRadius="20dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/submit"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">@color/contentToolbarColor</color>
+    <color name="colorPrimaryDark">@color/contentToolbarColor</color>
+    <color name="colorAccent">#f7b614</color>
+
+    <color name="color_accent">#7C0000</color>
+    <color name="color_white">#ffff</color>
+    <color name="color_black">#2F2F2F</color>
+    <color name="color_orange">#f7b614</color>
+
+    <color name="color_blue">#046ccc</color>
+
+    <color name="gray0">#EFEFF1</color>
+    <color name="gray1">#dddddd</color>
+    <color name="gray2">#d2d1d1</color>
+    <color name="gray3">#A8A8A8</color>
+    <color name="gray4">#868686</color>
+    <color name="gray5">#636262</color>
+    <color name="buble_msg">#E6E6E6</color>
+
+    <color name="switchColor">#DC2529</color>
+
+    <color name="offwhite">#f5f5f5</color>
+    <color name="oragne">#f7b614</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="color_yellow">#f7b614</color>
+    <color name="color_green">#44AC48</color>
+    <color name="transparent_dim">#33000000</color>
+    <color name="black_lite">#80000000</color>
+
+    <!--colors for light mode-->
+
+    <color name="tabselectedcolor">#A8A8A8</color>
+    <color name="tabunselectedcolor">#A8A8A8</color>
+    <color name="headercolor">#A8A8A8</color>
+
+    <color name="hintcolor">#A8A8A8</color>
+
+    <color name="contentBodyColor">#ffffff</color>
+    <color name="card_color">#fff</color>
+    <color name="seearchBarcolor">#ededed</color>
+    <color name="contentTextColor">#000000</color>
+
+    <color name="badgetextcolor">#EFEFF1</color>
+
+    <color name="linecolor">#EFEFF1</color>
+    <color name="boxcolor">#000000</color>
+
+    <color name="contentToolbarColor">#F7F7F7</color>
+    <color name="badgebackground">#000</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+
+    <color name="daynight_textColor">#000000</color>
+
+    <color name="designbar">#EFEFF1</color>
+
+    <color name="delete_message_text">#b8b8b8</color>
+
+    <color name="delete_message_bg">#f2f2f2</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#000000</color>
+    <color name="line">#000</color>
+    <color name="pure_black">#000000</color>
+
+    <color name="AccentLite">#3FEA1902</color>
+    <color name="AccentDark">#EA1405</color>
+    <color name="GreenLIte">#C5F1C6</color>
+    <color name="blueLite">#BBD2E8</color>
+</resources>

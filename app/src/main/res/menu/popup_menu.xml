@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/today"
+        android:title="Today" />
+    <item
+        android:id="@+id/yesterday"
+        android:title="Yesterday"/>
+    <item
+        android:id="@+id/sevenDays"
+        android:title="Last 7 Days"/>
+    <item
+        android:id="@+id/thirtyDays"
+        android:title="Last 30 Days"/>
+    <item
+        android:id="@+id/allTime"
+        android:title="All Time"/>
+</menu>

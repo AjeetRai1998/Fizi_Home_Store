@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Capsico Restaurant Partner</string>
+    <string name="otp_desc">We have send you a 6 digit verification code on</string>
+    <string-array name="storetype">
+
+        <item> Choose your Store type</item>
+        <item>Medical Store</item>
+        <item>General Store</item>
+        <item>Restaurant</item>
+        <item>Vegetable Store</item>
+    </string-array>
+    <string-array name="esablishmentproof">
+        <item>Choose Store establishment proof</item>
+        <item>Store Registeration certificate</item>
+        <item>FSSAI License</item>
+    </string-array>
+    <string-array name="idproof">
+        <item>Choose Owner Photo ID Proof Type</item>
+        <item>AadharCard</item>
+        <item>Driving License</item>
+        <item>Voter Id Card</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_account">View Account</string>
+    <string name="check_your_profile">Check Your Profile</string>
+    <string name="check_your_payment">Check Your Payment</string>
+    <string name="terms_and_condations">Terms and Conditions</string>
+    <string name="check_our_terms_conditions">Check our terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="check_our_privacy_policy">Check our privacy policy</string>
+    <string name="setting">Settings</string>
+    <string name="change_your_setting">Change App Settings</string>
+    <string name="dummy_review">There is more to it than a five-star rating. While the exact characteristics of good reviews vary by industry, there are certain fundamental elements that great reviews have in common. It’s worth taking note of them. </string>
+
+
+    <string-array name="discountType">
+        <item>Choose Discount Type</item>
+        <item>percentage</item>
+        <item>amount</item>
+
+
+    </string-array>
+
+    <string-array name="typeOfAddOn">
+        <item>Choose Add On Type</item>
+        <item>veg</item>
+        <item>non veg</item>
+    </string-array>
+    <string-array name="typeOfGroup">
+        <item>Choose GroupType</item>
+        <item>single </item>
+        <item>multiple</item>
+    </string-array>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCouenACFFeOljVUTNe0LAkGH9QS7XyRO4</string>
+</resources>

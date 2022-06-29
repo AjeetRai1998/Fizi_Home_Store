@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="digi.coders.capsicostorepartner">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <application
+        android:name=".singletask.SingleTask"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/mytheme"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.MissedOrders"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyMenu"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NoInternetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BookingTableDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProductFullDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyReviewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RestaurantMenuActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WithDrawFormActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FullImageViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeliverdOrderdActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TrackRiderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TrackOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderStatusActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddProductSuccessFullyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddProductFormActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddProductActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ManageProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DocumentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ViewAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.KYCStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.KYCActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.RegisterationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/introtheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".helper.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".helper.OrderService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".activity.DashboardActivity$OrderReciever">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_6kz5nGEzi8uXRw" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".helper.NotificationService" />
+    </application>
+
+</manifest>

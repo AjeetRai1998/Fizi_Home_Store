@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            app:layout_scrollFlags="scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/back_arrow" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product details"
+                    android:textColor="@color/pure_black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+                <Switch
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on"
+                    />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/productImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/burger" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/productName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="Burger"
+                            android:textColor="@color/pure_black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/productTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="With Maxican Salad"
+                            android:textColor="@color/color_black"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Edit"
+                    android:textColor="@color/color_white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/color_blue" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+                    android:id="@+id/addOnItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    app:backgroundTint="@color/red"
+                    android:drawableTint="@color/color_white"
+                    android:paddingRight="10dp"
+                    android:drawableLeft="@drawable/add_icon"
+                    android:layout_gravity="center"
+                    android:text="Add On"
+                    android:textColor="@color/color_white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addOnGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        app:backgroundTint="@color/color_green"
+                        android:drawableTint="@color/color_white"
+                        android:paddingRight="10dp"
+                        android:drawableLeft="@drawable/add_icon"
+                        android:layout_gravity="center"
+                        android:text="Add Group"
+                        android:textColor="@color/color_white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Detail"
+                android:textStyle="bold"
+                android:textColor="@color/pure_black"
+                android:layout_margin="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name:"
+                        android:textStyle="bold"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/proName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burger"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Category:"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/productCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Veg"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Product Menu:"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/productSubcategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Mrp"
+                        android:textStyle="bold"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/prodcutMrp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Offer Price:"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/productOfferPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGst (%) "
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/cgst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SGst (%)"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/sgst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GST Price"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/gstPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount(%)"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selling Price:"
+                        android:textColor="@color/pure_black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/sellingPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ "
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Add On List"
+                    android:textStyle="bold"
+                    android:background="@color/color_orange"
+                    android:padding="15dp"
+                    android:textColor="@color/color_white"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addOnList"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Group List"
+                    android:textStyle="bold"
+                    android:background="@color/color_orange"
+                    android:padding="15dp"
+                    android:textColor="@color/color_white"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/groupList"
+                    />
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
