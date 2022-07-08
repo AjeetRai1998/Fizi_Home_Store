@@ -89,7 +89,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/product"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -117,7 +117,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/product_category"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -178,6 +178,7 @@
                             android:layout_gravity="center"
                             android:drawableLeft="@drawable/add_icon"
                             android:drawableTint="@color/color_white"
+                            android:backgroundTint="@color/color_black"
                             android:layout_marginRight="20dp"
                             />
                         <com.google.android.material.button.MaterialButton
@@ -187,7 +188,7 @@
                             android:text="Sort Menu"
                             android:textSize="10sp"
                             android:layout_gravity="center"
-                            app:backgroundTint="@color/color_blue"
+                            app:backgroundTint="@color/colorAccent"
                             android:drawableLeft="@drawable/ic_arrow_down"
                             android:drawableTint="@color/color_white"
                             android:layout_marginRight="20dp"
@@ -233,7 +234,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/description"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -286,7 +287,7 @@
                                 android:layout_marginTop="10dp"
                                 android:text="Add Image"
                                 android:textAllCaps="true"
-                                android:textColor="@color/color_blue"
+                                android:textColor="@color/color_black"
                                 android:textStyle="bold" />
 
                             <ImageView
@@ -295,7 +296,7 @@
                                 android:layout_height="40dp"
                                 android:layout_marginLeft="10dp"
                                 android:src="@drawable/add_photo"
-                                app:tint="@color/oragne"
+                                app:tint="@color/colorAccent"
                                 android:layout_weight="1"/>
 
                         </LinearLayout>
@@ -316,7 +317,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="20dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/hungerji_logo" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -360,7 +361,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/price"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -385,7 +386,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/price"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -460,7 +461,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/price"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -487,7 +488,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/discount"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -520,7 +521,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/price"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -550,7 +551,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/discount"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -578,7 +579,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/discount"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -607,7 +608,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/money"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -635,7 +636,7 @@
                         android:gravity="center"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/price"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -662,7 +663,7 @@
                         android:enabled="false"
                         app:hintEnabled="false"
                         app:startIconDrawable="@drawable/discount"
-                        app:startIconTint="@color/oragne">
+                        app:startIconTint="@color/colorAccent">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -681,7 +682,7 @@
                 android:text="Add"
                 android:layout_margin="20dp"
                 app:cornerRadius="20dp"
-                app:backgroundTint="@color/oragne"
+                app:backgroundTint="@color/colorAccent"
                 android:padding="15dp"
                 />
 

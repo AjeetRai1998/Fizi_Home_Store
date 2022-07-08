@@ -1,8 +1,8 @@
 package digi.coders.capsicostorepartner.helper;
 
 public class Constraints {
-    public  static  final  String BASE_URL="http://designerpriya.com/assets/uploads/";
-    public  static  final  String BASE_URL1="http://designerpriya.com/";
+    public  static  final  String BASE_URL="https://hungerji.com/assets/uploads/";
+    public  static  final  String BASE_URL1="https://hungerji.com/";
     public static final String MERCHANT="merchant/";
     public static final String MASTER_PRODUCT="master_product/";
     public static final String COUPON="coupon/";

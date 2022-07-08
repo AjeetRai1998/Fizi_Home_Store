@@ -866,19 +866,24 @@
                         android:gravity="center"
                         android:padding="15dp"
                         android:clickable="true"
-                        android:background="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rect_bg"
                         android:orientation="horizontal">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="LOGOUT"
                             android:layout_weight="1"
-                            android:textColor="@color/pure_black"
+                            android:textColor="@color/color_white"
                             android:textSize="16dp"
                             android:textStyle="bold" />
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:tint="@color/color_white"
                             android:src="@drawable/logout"/>
                     </LinearLayout>
 

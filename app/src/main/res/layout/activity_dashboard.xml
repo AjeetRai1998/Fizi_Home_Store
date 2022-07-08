@@ -10,7 +10,7 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/pure_black"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -20,13 +20,13 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:visibility="gone"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/splash_icon"/>
+                    android:src="@drawable/hungerji_logo"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:layout_gravity="center"
                     android:orientation="vertical">
@@ -34,8 +34,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Capsico "
-                        android:textColor="@color/pure_black"
+                        android:text="Hungerji "
+                        android:textColor="@color/color_white"
                         android:textSize="17dp"
                         android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:singleLine="true"
                         android:layout_margin="3dp"
-                        android:textColor="@color/pure_black"
+                        android:textColor="@color/color_white"
                         android:textSize="12dp"
                         android:text="Restaurant Partner app"/>
                 </LinearLayout>
@@ -60,14 +60,14 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:tint="@color/pure_black"
+                        android:tint="@color/color_white"
                         android:src="@drawable/call_icon" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="10sp"
                         android:text="Any Emergency?"
-                        android:textColor="@color/pure_black"
+                        android:textColor="@color/color_white"
                         android:textStyle="bold"
                         android:layout_marginTop="5dp"
                         />

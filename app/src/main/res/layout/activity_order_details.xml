@@ -66,14 +66,14 @@
                 android:layout_weight="1"
                 android:textColor="@color/pure_black"
                 android:textAllCaps="true"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
             <TextView
                 android:id="@+id/items"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="15sp"
                 android:text="0 Items"
                 android:textColor="@color/pure_black"
                 android:textAllCaps="true"
@@ -190,7 +190,7 @@
                         android:text="Item Subtotal"
                         android:textColor="@color/color_black"
                         android:textStyle="bold"
-                        android:textSize="26sp"/>
+                        android:textSize="20sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
                     android:layout_marginRight="10dp"
                     android:text=""
                     android:textColor="@color/color_black"
-                    android:textSize="26sp"/>
+                    android:textSize="20sp"/>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
@@ -354,14 +354,14 @@
                     android:layout_weight="1"
                     android:text="Total Amount"
                     android:textColor="@color/color_black"
-                    android:textSize="26dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="(Inclusive of all taxes)"
-                    android:textSize="14dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -378,7 +378,7 @@
                     android:layout_height="wrap_content"
                     android:text="₹0"
                     android:textColor="@color/pure_black"
-                    android:textSize="26dp" />
+                    android:textSize="20sp" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:text="Submit reason"
                 app:cornerRadius="10dp"
+                android:backgroundTint="@color/colorAccent"
                 android:padding="15dp"
                 android:layout_margin="20dp"
                 />

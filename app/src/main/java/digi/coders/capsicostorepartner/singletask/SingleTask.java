@@ -15,7 +15,7 @@ import static digi.coders.capsicostorepartner.helper.Constraints.BASE_URL1;
 public class SingleTask extends Application {
 
     private Retrofit retrofit,retrofit1;
-    public static final String BASE_URL="http://designerpriya.com/MerchantAPIs/";
+    public static final String BASE_URL="https://hungerji.com/MerchantAPIs/";
 
     @Override
     public void onCreate() {

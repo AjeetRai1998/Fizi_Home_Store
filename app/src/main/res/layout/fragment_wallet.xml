@@ -102,7 +102,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Capsico Cash"
+                                android:text="Hungerji Cash"
                                 android:layout_weight="1"
                                 android:fontFamily="@font/roboto"
                                 android:textColor="@color/color_black"
@@ -202,7 +202,7 @@
                              android:layout_width="60dp"
                              android:layout_height="60dp"
                              android:layout_gravity="center_horizontal"
-                             android:src="@drawable/logo"/>
+                             android:src="@drawable/hungerji_logo"/>
                      </LinearLayout>
 
                 </LinearLayout>

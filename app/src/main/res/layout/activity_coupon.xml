@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:backgroundTint="@color/color_blue"
+        app:backgroundTint="@color/color_black"
         android:textColor="@color/color_white"
         app:iconTint="@color/color_white"
         android:layout_gravity="bottom|right"

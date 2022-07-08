@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:text="view order"
                 android:layout_weight="1"
-                app:backgroundTint="@color/color_blue"
+                app:backgroundTint="@color/colorAccent"
                 android:layout_margin="5dp"
                 />
         </LinearLayout>

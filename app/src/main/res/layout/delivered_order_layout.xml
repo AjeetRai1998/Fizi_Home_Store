@@ -4,12 +4,14 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/neworder_itemback"
         android:orientation="vertical">
 
         <LinearLayout
@@ -159,10 +161,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="view order"
-                android:textColor="@color/color_green"
-                android:textSize="20dp"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
                 android:layout_weight="1"
-                app:backgroundTint="@color/GreenLIte"
+                app:backgroundTint="@color/color_black"
                 android:layout_margin="5dp"
                 />
             <com.google.android.material.button.MaterialButton

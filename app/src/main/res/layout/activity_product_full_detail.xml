@@ -124,7 +124,7 @@
                     android:textColor="@color/color_white"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    app:backgroundTint="@color/color_blue" />
+                    app:backgroundTint="@color/color_black" />
 
             </LinearLayout>
             <LinearLayout

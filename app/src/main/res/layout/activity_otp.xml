@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/pure_black"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent">
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
             android:layout_width="match_parent"
@@ -20,7 +19,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorAccent"
+                    android:background="@color/pure_black"
                     >
                     <ImageView
                         android:layout_width="wrap_content"
@@ -38,18 +37,18 @@
                         android:scaleType="fitXY"
                         android:alpha="0.4"
                         />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/splash_icon"
                             android:layout_gravity="center"
-                            />
+                            android:src="@drawable/hungerji_logo" />
 
                     </LinearLayout>
 
@@ -59,94 +58,93 @@
 
 
         </com.google.android.material.appbar.AppBarLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="30dp"
             android:layout_below="@id/appbar"
-            >
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/logo"
-                android:visibility="gone"
                 android:layout_gravity="center"
-                />
+                android:src="@drawable/logo"
+                android:visibility="gone" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enter verification code"
-                android:textSize="20sp"
-                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/roboto"
-                android:textStyle="bold"
-                android:textColor="@color/color_black"
-                />
+                android:text="Enter verification code"
+                android:textColor="@color/color_white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/otp_desc"
-                android:textSize="13sp"
-                android:fontFamily="@font/roboto"
-                android:textColor="@color/color_black"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/otp_desc"
+                android:textColor="@color/color_white"
+                android:textSize="13sp" />
+
             <TextView
                 android:id="@+id/mobileNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="+918707639833"
-                android:textSize="12sp"
-                android:fontFamily="@font/roboto"
-                android:textColor="@color/color_black"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="+918707639833"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
 
             <com.mukesh.OtpView
                 android:id="@+id/otp_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
-                android:itemBackground="@color/color_white"
-                app:OtpItemCount="6"
-                android:inputType="number"
-                android:textColor="@color/color_black"
-                android:enabled="true"
                 android:layout_gravity="center"
+                android:layout_marginTop="72dp"
+                android:enabled="true"
+                android:inputType="number"
+                android:itemBackground="@color/color_white"
+                android:textColor="@color/color_black"
+                app:OtpItemCount="6"
                 app:OtpLineColor="@color/color_blue"
                 app:OtpViewType="line" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/otp_verify"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Verify OTP"
-                android:textAllCaps="false"
                 android:layout_gravity="center"
-                app:cornerRadius="20dp"
-                app:backgroundTint="@color/pure_black"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"
                 android:padding="15dp"
-                />
+                android:text="Verify OTP"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorAccent"
+                app:cornerRadius="20dp" />
+
             <TextView
                 android:id="@+id/resendOtp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textSize="16sp"
-                android:text="Resend OTP?"
-                android:fontFamily="@font/roboto"
-                android:textStyle="bold"
-                android:layout_marginTop="50dp"
                 android:layout_gravity="center"
-                android:textColor="@color/pure_black"
-                />
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/roboto"
+                android:text="Resend OTP?"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 

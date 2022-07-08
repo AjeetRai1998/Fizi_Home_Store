@@ -137,34 +137,32 @@
         <activity
             android:name=".activity.KYCActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/introtheme" />
+            />
         <activity
             android:name=".activity.DashboardActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ResetPasswordActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/introtheme" />
+            />
         <activity
             android:name=".activity.ForgetPasswordActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/introtheme" />
+            />
         <activity
             android:name=".activity.OtpActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/introtheme" />
+             />
         <activity
             android:name=".activity.RegisterationActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/introtheme" />
+             />
         <activity
             android:name=".activity.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/introtheme" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/introtheme">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

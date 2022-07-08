@@ -1,4 +1,5 @@
-<androidx.cardview.widget.CardView android:layout_width="match_parent"
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
     app:cardCornerRadius="20dp"
     app:cardElevation="1dp"
     android:layout_height="match_parent"

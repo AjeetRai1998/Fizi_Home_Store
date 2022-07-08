@@ -16,7 +16,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorAccent"
+                android:background="@color/pure_black"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                     <ImageView
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo"
+                        android:src="@drawable/hungerji_logo"
                         android:layout_gravity="center"
                         />
                     <TextView
@@ -49,7 +49,7 @@
                         android:text="Fill KYC Form here.."
                         android:layout_centerInParent="true"
                         android:layout_gravity="center"
-                        android:textSize="30sp"
+                        android:textSize="20sp"
                         android:textColor="@color/color_white"
                         />
                 </LinearLayout>
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/bank"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/account_no"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -168,7 +168,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/persons"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/persons"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -227,7 +227,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/ifsc_icon"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -256,7 +256,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/id"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -286,7 +286,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/id"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -316,7 +316,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/id"
                 android:gravity="center"
-                app:startIconTint="@color/oragne"
+                app:startIconTint="@color/colorAccent"
                 app:hintEnabled="false"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -368,7 +368,7 @@
                         android:text="Front photo"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:textColor="@color/color_blue"
+                        android:textColor="@color/color_black"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="20dp"
                         />
@@ -377,7 +377,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/add_photo"
-                        app:tint="@color/oragne"
+                        app:tint="@color/colorAccent"
                         android:layout_marginLeft="10dp"
                         />
                     <androidx.legacy.widget.Space
@@ -407,7 +407,7 @@
                         android:text="Back photo"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:textColor="@color/color_blue"
+                        android:textColor="@color/color_black"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="20dp"
                         />
@@ -416,7 +416,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/add_photo"
-                        app:tint="@color/oragne"
+                        app:tint="@color/colorAccent"
                         android:layout_marginLeft="10dp"
                         />
                     <androidx.legacy.widget.Space
@@ -553,7 +553,7 @@
                         android:text="Front photo"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:textColor="@color/color_blue"
+                        android:textColor="@color/color_black"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="20dp"
                         />
@@ -562,7 +562,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@drawable/add_photo"
-                        app:tint="@color/oragne"
+                        app:tint="@color/colorAccent"
                         android:layout_marginLeft="10dp"
                         />
                     <androidx.legacy.widget.Space
@@ -596,7 +596,7 @@
             android:text="Proceed Next"
             android:layout_margin="20dp"
             app:cornerRadius="20dp"
-            app:backgroundTint="@color/oragne"
+            app:backgroundTint="@color/colorAccent"
             android:padding="15dp"
             />
         </LinearLayout>

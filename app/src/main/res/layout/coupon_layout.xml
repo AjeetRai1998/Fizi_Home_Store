@@ -23,7 +23,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
-                app:cardBackgroundColor="@color/oragne"
+                app:cardBackgroundColor="@color/colorAccent"
                 >
             <ImageView
                 android:layout_width="24dp"

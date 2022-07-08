@@ -13,12 +13,13 @@
        <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent">
+
            <ImageView
                android:id="@+id/images"
-               android:scaleType="centerCrop"
                android:layout_width="match_parent"
                android:layout_height="match_parent"
-               android:src="@drawable/logo"/>
+               android:scaleType="centerCrop"
+               android:src="@drawable/hungerji_logo" />
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"

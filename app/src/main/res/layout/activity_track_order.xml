@@ -126,7 +126,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:text="View Order"
-                    app:backgroundTint="@color/color_green" />
+                    app:backgroundTint="@color/colorAccent" />
             </LinearLayout>
 
         </LinearLayout>

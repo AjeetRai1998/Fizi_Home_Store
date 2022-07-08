@@ -113,8 +113,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private String mobile,password;
     private boolean valid() {
-        mobile=binding.phone.getEditText().getText().toString();
-        password=binding.vpassword.getEditText().getText().toString();
+        mobile=binding.phone.getText().toString();
+        password=binding.vpassword.getText().toString();
         if(TextUtils.isEmpty(mobile))
         {
             binding.phone.setError("Please Enter mobile no");

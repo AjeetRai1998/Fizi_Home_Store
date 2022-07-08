@@ -90,7 +90,7 @@
                     android:gravity="center"
                     app:hintEnabled="false"
                     app:startIconDrawable="@drawable/persons"
-                    app:startIconTint="@color/oragne">
+                    app:startIconTint="@color/colorAccent">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -120,7 +120,7 @@
                     android:gravity="center"
                     app:hintEnabled="false"
                     app:startIconDrawable="@drawable/email"
-                    app:startIconTint="@color/oragne">
+                    app:startIconTint="@color/colorAccent">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -150,7 +150,7 @@
                     android:gravity="center"
                     app:hintEnabled="false"
                     app:startIconDrawable="@drawable/phone"
-                    app:startIconTint="@color/oragne">
+                    app:startIconTint="@color/colorAccent">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -182,7 +182,7 @@
                     android:gravity="center"
                     app:hintEnabled="false"
                     app:startIconDrawable="@drawable/password"
-                    app:startIconTint="@color/oragne">
+                    app:startIconTint="@color/colorAccent">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -237,7 +237,7 @@
                     android:layout_height="wrap_content"
                     app:startIconDrawable="@drawable/password"
                     android:gravity="center"
-                    app:startIconTint="@color/oragne"
+                    app:startIconTint="@color/colorAccent"
                     app:hintEnabled="false"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
@@ -270,7 +270,7 @@
                     android:layout_height="wrap_content"
                     app:startIconDrawable="@drawable/persons"
                     android:gravity="center"
-                    app:startIconTint="@color/oragne"
+                    app:startIconTint="@color/colorAccent"
                     app:hintEnabled="false"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
@@ -302,7 +302,7 @@
                     android:layout_height="wrap_content"
                     app:startIconDrawable="@drawable/password"
                     android:gravity="center"
-                    app:startIconTint="@color/oragne"
+                    app:startIconTint="@color/colorAccent"
                     app:hintEnabled="false"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
@@ -335,7 +335,7 @@
                     app:startIconDrawable="@drawable/password"
                     android:gravity="center"
                     android:visibility="gone"
-                    app:startIconTint="@color/oragne"
+                    app:startIconTint="@color/colorAccent"
                     app:hintEnabled="false"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
@@ -377,7 +377,7 @@
                             android:layout_height="wrap_content"
                             app:startIconDrawable="@drawable/email"
                             android:gravity="center"
-                            app:startIconTint="@color/oragne"
+                            app:startIconTint="@color/colorAccent"
                             app:hintEnabled="false"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
@@ -416,7 +416,7 @@
                             android:layout_height="wrap_content"
                             app:startIconDrawable="@drawable/email"
                             android:gravity="center"
-                            app:startIconTint="@color/oragne"
+                            app:startIconTint="@color/colorAccent"
                             app:hintEnabled="false"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
@@ -453,7 +453,7 @@
                     app:startIconDrawable="@drawable/password"
                     android:gravity="center"
                     android:visibility="gone"
-                    app:startIconTint="@color/oragne"
+                    app:startIconTint="@color/colorAccent"
                     app:hintEnabled="false"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"

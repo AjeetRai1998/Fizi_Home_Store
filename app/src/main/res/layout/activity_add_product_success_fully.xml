@@ -3,32 +3,32 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_centerInParent="true"
-        >
+        android:orientation="vertical">
+
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:lottie_fileName="success.json"
-            app:lottie_autoPlay="true"
             android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="success.json"
             app:lottie_repeatCount="100"
-            app:lottie_repeatMode="restart"
-            />
+            app:lottie_repeatMode="restart" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product added Successfully"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Product added Successfully"
             android:textColor="@color/color_black"
+            android:textSize="20sp"
 
             />
-
 
 
     </LinearLayout>
@@ -37,14 +37,15 @@
         android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go Back"
-        android:layout_margin="20dp"
-        app:cornerRadius="20dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        app:backgroundTint="@color/oragne"
         android:padding="15dp"
-        />
+        android:text="Go Back"
+        app:backgroundTint="@color/colorAccent"
+        app:cornerRadius="20dp" />
 
 
 </RelativeLayout>

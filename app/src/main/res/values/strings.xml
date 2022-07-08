@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Capsico Restaurant Partner</string>
+    <string name="app_name">Hungerji Restaurant Partner</string>
     <string name="otp_desc">We have send you a 6 digit verification code on</string>
     <string-array name="storetype">
 
